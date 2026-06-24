@@ -1,0 +1,25 @@
+{
+  "name": "open-crate",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Free, open, local-first DJ crate: catalogue your records, enrich with Camelot key + BPM, and draft harmonically-progressive sets. The engine is yours to extend.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raullee/open-crate"
+  },
+  "packageManager": "pnpm@9.12.0",
+  "scripts": {
+    "build": "pnpm --filter @open-crate/core build && pnpm --filter web build",
+    "build:core": "pnpm --filter @open-crate/core build",
+    "dev": "pnpm --filter web dev",
+    "test": "pnpm --filter @open-crate/core test",
+    "lint": "pnpm --filter web lint"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@open-crate/core": "workspace:*"
+  }
+}

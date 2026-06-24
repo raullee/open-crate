@@ -1,0 +1,40 @@
+{
+  "ocf": "1.0.0",
+  "meta": {
+    "name": "Open Crate (sample)",
+    "owner": "you",
+    "target": 300
+  },
+  "keyers": [
+    { "name": "You", "short": "YOU", "recordsRead": 12, "note": "Seeded the crate to prove it works, then handed over the clipboard.", "accent": "#ffd23f", "owner": true, "firstAt": "2026-01-01" },
+    { "name": "Sam", "short": "SA", "recordsRead": 9, "note": "First friend to dig. Read a stack of classic trance.", "accent": "#ff3d6e", "firstAt": "2026-01-04" },
+    { "name": "Alex", "short": "AL", "recordsRead": 4, "note": "Brought the house and techno end.", "accent": "#5ec8e5", "firstAt": "2026-01-06" }
+  ],
+  "tracks": [
+    { "artist": "Energy 52", "title": "Café Del Mar", "year": 1998, "label": "Hooj Choons", "bpm": 137, "key_musical": "F Minor", "key_camelot": "4A", "energy": 5, "source": "vinyl", "genre": "Electronic", "style": "Trance", "keyer": "Sam", "added_at": "2026-01-04T10:00:00Z" },
+    { "artist": "Gouryella", "title": "Gouryella", "year": 1999, "label": "Tsunami", "bpm": 138, "key_musical": "B Minor", "key_camelot": "10A", "energy": 4, "source": "vinyl", "style": "Trance", "keyer": "Sam", "added_at": "2026-01-04T10:05:00Z" },
+    { "artist": "Robert Miles", "title": "Children", "year": 1995, "label": "Deconstruction", "bpm": 137, "key_musical": "A Minor", "key_camelot": "8A", "energy": 3, "source": "vinyl", "style": "Dream Trance", "keyer": "Sam", "added_at": "2026-01-04T10:10:00Z" },
+    { "artist": "Faithless", "title": "Insomnia", "year": 1995, "label": "Cheeky", "bpm": 128, "key_musical": "D Minor", "key_camelot": "7A", "energy": 4, "source": "vinyl", "style": "Progressive House", "keyer": "Sam", "added_at": "2026-01-04T10:15:00Z" },
+    { "artist": "Sasha", "title": "Xpander", "year": 1999, "label": "Deconstruction", "bpm": 135, "key_musical": "F# Minor", "key_camelot": "11A", "energy": 4, "source": "vinyl", "style": "Progressive", "keyer": "Sam", "added_at": "2026-01-04T10:20:00Z" },
+    { "artist": "Paul van Dyk", "title": "For An Angel", "mix": "E-Werk Club Mix", "year": 1998, "label": "Deviant", "bpm": 138, "key_musical": "E Minor", "key_camelot": "9A", "energy": 5, "source": "vinyl", "style": "Trance", "keyer": "Sam", "added_at": "2026-01-04T10:25:00Z" },
+    { "artist": "BT", "title": "Flaming June", "year": 1997, "label": "Perfecto", "bpm": 134, "key_musical": "G Minor", "key_camelot": "6A", "energy": 4, "source": "vinyl", "style": "Trance", "keyer": "Sam", "added_at": "2026-01-04T10:30:00Z" },
+    { "artist": "Agnelli & Nelson", "title": "Everyday", "year": 1999, "label": "Xtravaganza", "bpm": 137, "key_musical": "C Minor", "key_camelot": "5A", "energy": 4, "source": "vinyl", "style": "Trance", "keyer": "Sam", "added_at": "2026-01-04T10:35:00Z" },
+    { "artist": "Chicane", "title": "Saltwater", "year": 1999, "label": "Xtravaganza", "bpm": 132, "key_musical": "D# Minor", "key_camelot": "2A", "energy": 3, "source": "vinyl", "style": "Trance", "keyer": "Sam", "added_at": "2026-01-04T10:40:00Z" },
+    { "artist": "Adagio For Strings", "title": "Tiësto", "year": 2004, "label": "Black Hole", "bpm": 138, "key_musical": "A Minor", "key_camelot": "8A", "energy": 5, "source": "digital", "style": "Trance", "keyer": "You", "added_at": "2026-01-01T09:00:00Z" },
+    { "artist": "Underworld", "title": "Born Slippy .NUXX", "year": 1995, "label": "Junior Boy's Own", "bpm": 138, "key_musical": "C Major", "key_camelot": "8B", "energy": 4, "source": "vinyl", "style": "Techno", "keyer": "Alex", "added_at": "2026-01-06T11:00:00Z" },
+    { "artist": "Daft Punk", "title": "Around The World", "year": 1997, "label": "Virgin", "bpm": 121, "key_musical": "G Minor", "key_camelot": "6A", "energy": 3, "source": "vinyl", "style": "French House", "keyer": "Alex", "added_at": "2026-01-06T11:05:00Z" },
+    { "artist": "Stardust", "title": "Music Sounds Better With You", "year": 1998, "label": "Roulé", "bpm": 123, "key_musical": "A Minor", "key_camelot": "8A", "energy": 4, "source": "vinyl", "style": "French House", "keyer": "Alex", "added_at": "2026-01-06T11:10:00Z" },
+    { "artist": "Green Velvet", "title": "La La Land", "year": 2001, "label": "Music Man", "bpm": 128, "key_musical": "A Minor", "key_camelot": "8A", "energy": 4, "source": "vinyl", "style": "Tech House", "keyer": "Alex", "added_at": "2026-01-06T11:15:00Z" },
+    { "artist": "Eric Prydz", "title": "Pjanoo", "year": 2008, "label": "Pryda", "bpm": 126, "key_musical": "G# Minor", "key_camelot": "1A", "energy": 4, "source": "digital", "style": "Progressive House", "keyer": "You", "added_at": "2026-01-01T09:05:00Z" },
+    { "artist": "deadmau5", "title": "Strobe", "year": 2009, "label": "mau5trap", "bpm": 128, "key_musical": "B Minor", "key_camelot": "10A", "energy": 3, "source": "digital", "style": "Progressive House", "keyer": "You", "added_at": "2026-01-01T09:10:00Z" },
+    { "artist": "Pryda", "title": "Allein", "year": 2012, "label": "Pryda", "bpm": 126, "key_musical": "F# Minor", "key_camelot": "11A", "energy": 4, "source": "digital", "style": "Progressive House", "keyer": "You", "added_at": "2026-01-01T09:15:00Z" },
+    { "artist": "Lane 8", "title": "Brightest Lights", "year": 2020, "label": "This Never Happened", "bpm": 122, "key_musical": "C Major", "key_camelot": "8B", "energy": 3, "source": "digital", "style": "Melodic House", "keyer": "You", "added_at": "2026-01-01T09:20:00Z" },
+    { "artist": "Bicep", "title": "Glue", "year": 2017, "label": "Ninja Tune", "bpm": 130, "key_musical": "F Minor", "key_camelot": "4A", "energy": 4, "source": "digital", "style": "Electronica", "keyer": "You", "added_at": "2026-01-01T09:25:00Z" },
+    { "artist": "Jon Hopkins", "title": "Open Eye Signal", "year": 2013, "label": "Domino", "bpm": 124, "key_musical": "D Minor", "key_camelot": "7A", "energy": 3, "source": "digital", "style": "Techno", "keyer": "You", "added_at": "2026-01-01T09:30:00Z" },
+    { "artist": "Four Tet", "title": "Two Thousand And Seventeen", "year": 2017, "label": "Text", "bpm": 120, "key_musical": "A Minor", "key_camelot": "8A", "energy": 2, "source": "digital", "style": "Electronica", "keyer": "You", "added_at": "2026-01-01T09:35:00Z" },
+    { "artist": "Booka Shade", "title": "Body Language", "year": 2005, "label": "Get Physical", "bpm": 124, "key_musical": "E Minor", "key_camelot": "9A", "energy": 3, "source": "vinyl", "style": "Tech House", "keyer": "Alex", "added_at": "2026-01-06T11:20:00Z" },
+    { "artist": "Âme", "title": "Rej", "year": 2005, "label": "Innervisions", "bpm": 125, "key_musical": "C Minor", "key_camelot": "5A", "energy": 3, "source": "vinyl", "style": "Deep House", "keyer": "You", "added_at": "2026-01-01T09:40:00Z" },
+    { "artist": "Maceo Plex", "title": "Conjure Dreams", "year": 2013, "label": "Crosstown Rebels", "bpm": 124, "key_musical": "G Minor", "key_camelot": "6A", "energy": 3, "source": "digital", "style": "Techno", "keyer": "You", "added_at": "2026-01-01T09:45:00Z" },
+    { "artist": "Pop Victim", "title": "The World", "source": "vinyl", "keyer": "Sam", "added_at": "2026-01-04T10:45:00Z", "tags": ["needs-key"] }
+  ]
+}

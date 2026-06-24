@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# builds
+dist/
+.next/
+out/
+*.tsbuildinfo
+
+# env / secrets
+.env
+.env.local
+.env*.local
+
+# os / editor
+.DS_Store
+*.log
+.vscode/
+.idea/
+
+# vercel
+.vercel
+
+# tool outputs
+tools/__pycache__/
+*.pyc
+/tmp-crate/

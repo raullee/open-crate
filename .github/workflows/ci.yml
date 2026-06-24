@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: corepack enable
+      - run: corepack pnpm install --frozen-lockfile=false
+      - name: Build engine
+        run: corepack pnpm build:core
+      - name: Test engine
+        run: corepack pnpm test
+      - name: Build web
+        run: corepack pnpm --filter web build

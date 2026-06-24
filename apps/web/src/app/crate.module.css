@@ -1,0 +1,273 @@
+.page {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: clamp(2.5rem, 6vw, 5rem) clamp(1.1rem, 4vw, 2rem) 5rem;
+}
+
+/* ---- Header ---- */
+.header {
+  margin-bottom: clamp(2rem, 5vw, 3.25rem);
+}
+.eyebrow {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--foreground) 42%, transparent);
+  margin: 0 0 1rem;
+}
+.title {
+  font-size: clamp(2.6rem, 8vw, 4.4rem);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  font-weight: 500;
+  margin: 0;
+}
+.title em {
+  font-style: italic;
+  color: color-mix(in srgb, var(--foreground) 64%, transparent);
+}
+.lede {
+  margin: 1.1rem 0 0;
+  max-width: 34ch;
+  font-size: 1.02rem;
+  line-height: 1.5;
+  color: color-mix(in srgb, var(--foreground) 66%, transparent);
+}
+.count {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--foreground) 38%, transparent);
+  margin-top: 1.6rem;
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+.dotsep::before {
+  content: "·";
+  margin-right: 0.6rem;
+  color: color-mix(in srgb, var(--foreground) 28%, transparent);
+}
+
+/* ---- Controls ---- */
+.controls {
+  display: flex;
+  gap: 0.75rem;
+  align-items: stretch;
+  margin-bottom: 1.25rem;
+  position: sticky;
+  top: 0;
+  padding: 0.9rem 0;
+  background: linear-gradient(var(--background) 72%, transparent);
+  z-index: 5;
+}
+.search {
+  flex: 1;
+  background: color-mix(in srgb, var(--foreground) 5%, transparent);
+  border: 1px solid color-mix(in srgb, var(--foreground) 12%, transparent);
+  border-radius: 10px;
+  color: var(--foreground);
+  padding: 0.7rem 0.95rem;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.18s ease, background 0.18s ease;
+}
+.search::placeholder {
+  color: color-mix(in srgb, var(--foreground) 32%, transparent);
+}
+.search:focus {
+  border-color: color-mix(in srgb, var(--foreground) 34%, transparent);
+  background: color-mix(in srgb, var(--foreground) 8%, transparent);
+}
+.sort {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--foreground) 42%, transparent);
+}
+.sort select {
+  background: color-mix(in srgb, var(--foreground) 5%, transparent);
+  border: 1px solid color-mix(in srgb, var(--foreground) 12%, transparent);
+  border-radius: 10px;
+  color: var(--foreground);
+  padding: 0.7rem 0.8rem;
+  font-size: 0.85rem;
+  font-family: var(--font-mono), monospace;
+  letter-spacing: normal;
+  text-transform: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.mixPill {
+  appearance: none;
+  border: 1px solid color-mix(in srgb, var(--foreground) 22%, transparent);
+  background: color-mix(in srgb, var(--foreground) 7%, transparent);
+  color: var(--foreground);
+  border-radius: 999px;
+  padding: 0.45rem 0.9rem;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.74rem;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  margin-bottom: 1.1rem;
+  transition: background 0.16s ease;
+}
+.mixPill:hover {
+  background: color-mix(in srgb, var(--foreground) 12%, transparent);
+}
+
+/* ---- List ---- */
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.05rem 0.4rem 1.05rem 0.2rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--foreground) 9%, transparent);
+  transition: background 0.14s ease;
+}
+.row:hover {
+  background: color-mix(in srgb, var(--foreground) 3.5%, transparent);
+}
+.main {
+  min-width: 0;
+}
+.titleLine {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem;
+  font-size: 1.04rem;
+  line-height: 1.25;
+}
+.artist {
+  font-weight: 600;
+}
+.dash {
+  color: color-mix(in srgb, var(--foreground) 36%, transparent);
+}
+.trackTitle {
+  color: color-mix(in srgb, var(--foreground) 82%, transparent);
+}
+.mix {
+  font-size: 0.82rem;
+  color: color-mix(in srgb, var(--foreground) 50%, transparent);
+}
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 0.4rem;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  color: color-mix(in srgb, var(--foreground) 40%, transparent);
+}
+.catno {
+  color: color-mix(in srgb, var(--foreground) 54%, transparent);
+}
+.style {
+  color: color-mix(in srgb, var(--foreground) 34%, transparent);
+}
+.link {
+  color: color-mix(in srgb, var(--foreground) 52%, transparent);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--foreground) 22%, transparent);
+}
+.link:hover {
+  color: var(--foreground);
+}
+.pending {
+  color: #d9a441;
+}
+
+/* ---- Technical block ---- */
+.tech {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  font-family: var(--font-mono), monospace;
+  flex-shrink: 0;
+}
+.year {
+  font-size: 0.74rem;
+  color: color-mix(in srgb, var(--foreground) 34%, transparent);
+  width: 2.6rem;
+  text-align: right;
+}
+.bpm {
+  font-size: 0.86rem;
+  color: color-mix(in srgb, var(--foreground) 70%, transparent);
+  width: 2.4rem;
+  text-align: right;
+}
+.key {
+  appearance: none;
+  cursor: pointer;
+  min-width: 2.9rem;
+  text-align: center;
+  padding: 0.32rem 0.5rem;
+  border-radius: 7px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: hsl(var(--hue) 70% 86%);
+  background: hsl(var(--hue) 60% 50% / 0.16);
+  border: 1px solid hsl(var(--hue) 60% 60% / 0.3);
+  transition: transform 0.12s ease, background 0.16s ease;
+}
+.key:hover {
+  background: hsl(var(--hue) 60% 50% / 0.28);
+  transform: translateY(-1px);
+}
+.keyEmpty {
+  min-width: 2.9rem;
+  text-align: center;
+  font-size: 0.76rem;
+  color: color-mix(in srgb, var(--foreground) 24%, transparent);
+}
+
+.empty {
+  text-align: center;
+  padding: 3rem 0;
+  color: color-mix(in srgb, var(--foreground) 45%, transparent);
+}
+
+/* ---- Footer ---- */
+.footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid color-mix(in srgb, var(--foreground) 9%, transparent);
+  font-family: var(--font-mono), monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  line-height: 1.7;
+  color: color-mix(in srgb, var(--foreground) 34%, transparent);
+}
+.footer a {
+  color: color-mix(in srgb, var(--foreground) 50%, transparent);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--foreground) 22%, transparent);
+}
+
+@media (max-width: 560px) {
+  .year {
+    display: none;
+  }
+  .titleLine {
+    font-size: 0.98rem;
+  }
+}

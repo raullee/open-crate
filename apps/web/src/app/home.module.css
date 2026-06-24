@@ -1,0 +1,502 @@
+/* ============================================================
+   THE CRATE — landing. Swiss grid underneath, one shout on top.
+   ============================================================ */
+
+.page {
+  --gutter: clamp(1.1rem, 4vw, 3rem);
+  --rule: color-mix(in srgb, var(--paper) 14%, transparent);
+  width: 100%;
+}
+
+.section {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: clamp(3.5rem, 8vw, 7rem) var(--gutter);
+}
+.section + .section {
+  border-top: 1px solid var(--rule);
+}
+
+.kicker {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--paper) 46%, transparent);
+}
+.kicker b {
+  color: var(--pink);
+  font-weight: 400;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: clamp(1.4rem, 4vw, 2.6rem) var(--gutter) clamp(2rem, 5vw, 3rem);
+  overflow: hidden;
+  isolation: isolate;
+}
+.heroGlow {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background:
+    radial-gradient(60% 50% at 70% 38%, color-mix(in srgb, var(--overprint) 55%, transparent) 0%, transparent 70%),
+    radial-gradient(50% 45% at 22% 72%, color-mix(in srgb, var(--pink) 26%, transparent) 0%, transparent 70%),
+    var(--ink);
+}
+.heroCanvasWrap {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.95;
+}
+.heroTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.heroBadge {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 0.4rem 0.8rem;
+  background: color-mix(in srgb, var(--ink) 55%, transparent);
+  backdrop-filter: blur(6px);
+}
+.heroBadge b {
+  color: var(--pink);
+}
+.heroBody {
+  width: 100%;
+  max-width: 760px;
+}
+.heroHead {
+  display: flex;
+  flex-direction: column;
+  gap: 0.12em;
+  margin: 0;
+}
+.heroLine {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 800;
+  line-height: 0.86;
+  letter-spacing: 0.02em;
+  font-size: clamp(3rem, 13vw, 8.5rem);
+  white-space: nowrap;
+}
+.heroSub {
+  margin-top: 1.4rem;
+  max-width: 30ch;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.5;
+  color: color-mix(in srgb, var(--paper) 78%, transparent);
+}
+.heroCue {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--paper) 50%, transparent);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.heroCue span {
+  width: 1px;
+  height: 2.2rem;
+  background: linear-gradient(var(--pink), transparent);
+}
+
+/* ---------- RANSOM headline ---------- */
+.ransom {
+  display: inline;
+}
+.chip,
+.chipInv {
+  display: inline-block;
+  padding: 0 0.06em;
+  border-radius: 0.06em;
+  transform: rotate(var(--rot, 0deg)) translateY(var(--shift, 0));
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.28);
+}
+.chip {
+  background: var(--paper);
+  color: var(--ink);
+}
+.chipInv {
+  background: var(--ink);
+  color: var(--paper);
+  outline: 1.5px solid var(--paper);
+  outline-offset: -1.5px;
+}
+.chipPink {
+  background: var(--pink);
+  color: var(--ink);
+}
+
+/* ---------- PROGRESS / VITALS ---------- */
+.vitals {
+  display: grid;
+  gap: clamp(1.6rem, 4vw, 2.6rem);
+}
+.progressHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.bigNum {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 800;
+  font-size: clamp(3rem, 9vw, 6rem);
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+}
+.bigNum em {
+  font-style: normal;
+  color: var(--pink);
+}
+.progressNote {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.8rem;
+  color: color-mix(in srgb, var(--paper) 55%, transparent);
+  max-width: 26ch;
+  text-align: right;
+}
+.bar {
+  position: relative;
+  height: 14px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--paper) 4%, transparent);
+}
+.barFill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--overprint), var(--pink));
+  box-shadow: 0 0 18px color-mix(in srgb, var(--pink) 60%, transparent);
+}
+.statRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(1.4rem, 5vw, 3.4rem);
+  font-family: var(--font-mono), monospace;
+}
+.stat b {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--paper);
+}
+.stat span {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--paper) 45%, transparent);
+}
+
+/* ---------- MARQUEE (one, slow) ---------- */
+.marquee {
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0.9rem 0;
+}
+.marqueeTrack {
+  display: inline-block;
+  will-change: transform;
+  animation: scroll 38s linear infinite;
+}
+.marqueeTrack span {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+  padding: 0 1.1rem;
+  color: color-mix(in srgb, var(--paper) 72%, transparent);
+}
+.marqueeTrack span::after {
+  content: "✺";
+  margin-left: 2.2rem;
+  color: var(--pink);
+}
+@keyframes scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ---------- HOW / STEPS ---------- */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1rem, 3vw, 2rem);
+  margin-top: 2.4rem;
+}
+.step {
+  border: 1px solid var(--rule);
+  border-radius: 14px;
+  padding: 1.6rem 1.4rem;
+  background: color-mix(in srgb, var(--paper) 2.5%, transparent);
+}
+.stepNum {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.78rem;
+  color: var(--pink);
+  letter-spacing: 0.1em;
+}
+.stepH {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 700;
+  font-size: 1.35rem;
+  margin: 0.7rem 0 0.5rem;
+  letter-spacing: -0.01em;
+}
+.stepP {
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: color-mix(in srgb, var(--paper) 64%, transparent);
+}
+.rule {
+  margin-top: 2rem;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.82rem;
+  color: color-mix(in srgb, var(--paper) 55%, transparent);
+}
+.rule mark {
+  background: var(--pink);
+  color: var(--ink);
+  padding: 0.05em 0.3em;
+}
+
+/* ---------- WHY (quiet, no texture) ---------- */
+.why {
+  max-width: 720px;
+}
+.whyText {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 500;
+  font-size: clamp(1.3rem, 2.6vw, 1.9rem);
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  color: color-mix(in srgb, var(--paper) 88%, transparent);
+}
+.whyText b {
+  color: var(--paper);
+  font-weight: 700;
+}
+
+/* ---------- DIGGERS (leaderboard) ---------- */
+.board {
+  display: grid;
+  gap: 0.7rem;
+  margin-top: 2rem;
+}
+.boardRow {
+  display: grid;
+  grid-template-columns: 2.2rem 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--paper) 2.5%, transparent);
+}
+.boardRow:first-child {
+  border-color: color-mix(in srgb, var(--pink) 55%, transparent);
+  background: color-mix(in srgb, var(--pink) 8%, transparent);
+}
+.rank {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: color-mix(in srgb, var(--paper) 45%, transparent);
+}
+.boardRow:first-child .rank {
+  color: var(--pink);
+}
+.who {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  min-width: 0;
+}
+.badge {
+  flex-shrink: 0;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-mono), monospace;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--ink);
+}
+.whoName {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.whoNote {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.72rem;
+  color: color-mix(in srgb, var(--paper) 48%, transparent);
+}
+.tag {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pink);
+  border: 1px solid color-mix(in srgb, var(--pink) 45%, transparent);
+  border-radius: 999px;
+  padding: 0.12rem 0.5rem;
+  margin-left: 0.5rem;
+}
+.score {
+  text-align: right;
+  font-family: var(--font-display), sans-serif;
+}
+.score b {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+.score span {
+  display: block;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--paper) 45%, transparent);
+}
+.boardAside {
+  margin-top: 1.3rem;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.82rem;
+  color: color-mix(in srgb, var(--paper) 58%, transparent);
+}
+
+/* ---------- LATEST (activity feed) ---------- */
+.feed {
+  display: grid;
+  gap: 0;
+  margin-top: 1.8rem;
+}
+.feedRow {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  align-items: baseline;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+.feedMain {
+  font-size: 0.98rem;
+}
+.feedMain b {
+  font-weight: 700;
+}
+.feedMain i {
+  font-style: normal;
+  color: color-mix(in srgb, var(--paper) 55%, transparent);
+}
+.feedMeta {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.72rem;
+  color: color-mix(in srgb, var(--paper) 48%, transparent);
+  white-space: nowrap;
+}
+.feedMeta em {
+  font-style: normal;
+  color: var(--cyan);
+}
+
+/* ---------- INVITE / FOMO ---------- */
+.invite {
+  text-align: center;
+  display: grid;
+  gap: 1.4rem;
+  place-items: center;
+}
+.inviteH {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.8rem, 5vw, 3.4rem);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  max-width: 16ch;
+}
+.inviteP {
+  max-width: 44ch;
+  line-height: 1.55;
+  color: color-mix(in srgb, var(--paper) 70%, transparent);
+}
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-display), sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--ink);
+  background: var(--pink);
+  border-radius: 999px;
+  padding: 0.95rem 1.8rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px color-mix(in srgb, var(--pink) 45%, transparent);
+}
+.ctaGhost {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--paper) 60%, transparent);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 2px;
+}
+
+/* ---------- FOOTER ---------- */
+.foot {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.4rem var(--gutter) 4rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-mono), monospace;
+  font-size: 0.72rem;
+  line-height: 1.8;
+  color: color-mix(in srgb, var(--paper) 42%, transparent);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.foot a {
+  color: color-mix(in srgb, var(--paper) 62%, transparent);
+  border-bottom: 1px solid var(--rule);
+}
+
+@media (max-width: 720px) {
+  .steps {
+    grid-template-columns: 1fr;
+  }
+  .progressNote {
+    text-align: left;
+  }
+}

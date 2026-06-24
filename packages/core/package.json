@@ -1,0 +1,49 @@
+{
+  "name": "@open-crate/core",
+  "version": "0.1.0",
+  "description": "Framework-agnostic engine for harmonic DJ set generation: Camelot/harmonic theory, a swappable set-generator, a portable crate schema, and pluggable import/enrichment adapters.",
+  "keywords": [
+    "dj",
+    "harmonic-mixing",
+    "camelot",
+    "set-generator",
+    "playlist",
+    "bpm",
+    "key-detection",
+    "rekordbox",
+    "vinyl",
+    "music"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "sideEffects": [
+    "**/registry.js"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
