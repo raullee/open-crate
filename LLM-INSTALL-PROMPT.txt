@@ -1,0 +1,13 @@
+Set up open-crate for me locally and run it. Do these steps and fix any errors as you go:
+
+1. Clone https://github.com/raullee/open-crate and cd into it.
+2. Make sure Node 20+ is installed. Enable pnpm with `corepack enable` (or use `corepack pnpm@9` for each command).
+3. Run `corepack pnpm install`, then `corepack pnpm build:core`.
+4. Start it with `corepack pnpm dev` and tell me the local URL (usually http://localhost:3000).
+5. It ships with sample records and the default skin. Confirm the home page, /crate and /studio all load.
+6. Then ask me if I want my own collection in it:
+   - If I have a Rekordbox or CSV export: run `node tools/import.mjs <my-file> --keyer "Me"`.
+   - If I have vinyl: help me make a records.txt (one "Artist - Title" per line) and run `node tools/enrich.mjs records.txt --keyer "Me"`.
+   Then restart dev so my records appear.
+
+Keep to these steps. Do not change the design or the default skin.

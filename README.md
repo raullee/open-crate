@@ -59,6 +59,12 @@ corepack pnpm dev          # http://localhost:3000  (ships with sample records)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/raullee/open-crate&root-directory=apps/web&build-command=cd%20../..%20%26%26%20corepack%20pnpm%20build)
 
+**Even less friction** ([all options →](./docs/INSTALL.md)):
+
+- **No terminal:** click Deploy above, or just look at the [live demo](https://crate.syncprimitive.com).
+- **One-liner:** `npx degit raullee/open-crate my-crate && cd my-crate && corepack enable && pnpm install && pnpm build:core && pnpm dev`
+- **Paste in your AI terminal:** hand [`LLM-INSTALL-PROMPT.txt`](./LLM-INSTALL-PROMPT.txt) to Claude Code / Cursor / Copilot / Gemini CLI and it stands open-crate up for you, default skin and all.
+
 Then **make it yours**: drop in your records (see [`/tools`](./tools)) and brand it in [`apps/web/src/site.config.ts`](./apps/web/src/site.config.ts).
 
 ## Bring your own collection
