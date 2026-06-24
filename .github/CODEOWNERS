@@ -1,0 +1,5 @@
+# Default owner for everything in the repo.
+* @raullee
+
+# The engine is the stable contract; review it carefully.
+/packages/core/ @raullee

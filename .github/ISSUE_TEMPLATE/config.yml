@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussions & questions
+    url: https://github.com/raullee/open-crate/discussions
+    about: Ideas, "how do I…", show-and-tell, and general questions. Not a bug? Start here.
+  - name: 📦 New adapter or generator
+    url: https://github.com/raullee/open-crate/blob/main/CONTRIBUTING.md
+    about: Want to add an import adapter or a set generator? The contributing guide shows the interfaces.
+  - name: 🗺️ Roadmap
+    url: https://github.com/raullee/open-crate/blob/main/docs/ROADMAP.md
+    about: See what's planned (and what we deliberately won't build) before requesting.

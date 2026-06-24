@@ -6,9 +6,13 @@
 
 The engine is a swappable, MIT-licensed package. The set generator is a strategy you can replace. Your library lives in plain JSON you own forever.
 
+[![CI](https://github.com/raullee/open-crate/actions/workflows/ci.yml/badge.svg)](https://github.com/raullee/open-crate/actions/workflows/ci.yml)
 [![MIT License](https://img.shields.io/badge/license-MIT-black)](./LICENSE)
-[![core: @open-crate/core](https://img.shields.io/badge/engine-%40open--crate%2Fcore-ff48b0)](./packages/core)
+[![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6?logo=typescript&logoColor=white)](./packages/core)
+[![engine: @open-crate/core](https://img.shields.io/badge/engine-%40open--crate%2Fcore-ff48b0)](./packages/core)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](./CONTRIBUTING.md)
+[![Discussions](https://img.shields.io/github/discussions/raullee/open-crate?color=7A5CFF)](https://github.com/raullee/open-crate/discussions)
+[![Stars](https://img.shields.io/github/stars/raullee/open-crate?style=social)](https://github.com/raullee/open-crate/stargazers)
 
 [**Live demo**](https://open-crate.vercel.app) · [**The engine**](./packages/core) · [**Import your library**](./tools) · [**Architecture**](./docs/ARCHITECTURE.md) · [**Roadmap**](./docs/ROADMAP.md)
 
