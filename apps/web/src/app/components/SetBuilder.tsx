@@ -3,7 +3,6 @@
 import { useEffect, useMemo, useState } from "react";
 import type { Track } from "@/lib/crate";
 import {
-  camelotTransition,
   generateSet,
   planTrackCount,
   type Mode,
@@ -31,17 +30,20 @@ function smoothColor(s: number) {
 }
 
 export function SetBuilder({ tracks }: { tracks: Track[] }) {
-  const [ok, setOk] = useState(false);
+  const [ok, setOk] = useState(PASSPHRASE === "");
   const [pass, setPass] = useState("");
 
   useEffect(() => {
+    if (!PASSPHRASE) return;
     const urlKey = new URLSearchParams(window.location.search).get("key");
     if (urlKey === PASSPHRASE) {
       localStorage.setItem("crate-studio", PASSPHRASE);
-      setOk(true);
+      queueMicrotask(() => setOk(true));
       return;
     }
-    if (localStorage.getItem("crate-studio") === PASSPHRASE) setOk(true);
+    if (localStorage.getItem("crate-studio") === PASSPHRASE) {
+      queueMicrotask(() => setOk(true));
+    }
   }, []);
 
   const [durMin, setDurMin] = useState(60);

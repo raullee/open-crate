@@ -2,7 +2,7 @@
 
 ## Supported versions
 
-open-crate is pre-1.0. Security fixes land on `main` and the latest published `@open-crate/core`.
+open-crate is pre-1.0. Security fixes land on `main` and the packaged `@open-crate/core` workspace.
 
 | Version | Supported |
 |---|---|

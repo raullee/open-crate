@@ -14,7 +14,7 @@ The engine is a swappable, MIT-licensed package. The set generator is a strategy
 [![Discussions](https://img.shields.io/github/discussions/raullee/open-crate?color=7A5CFF)](https://github.com/raullee/open-crate/discussions)
 [![Stars](https://img.shields.io/github/stars/raullee/open-crate?style=social)](https://github.com/raullee/open-crate/stargazers)
 
-[**Live demo**](https://open-crate.vercel.app) · [**The engine**](./packages/core) · [**Import your library**](./tools) · [**Architecture**](./docs/ARCHITECTURE.md) · [**Roadmap**](./docs/ROADMAP.md)
+[**Live demo**](https://crate.syncprimitive.com) · [**The engine**](./packages/core) · [**Import your library**](./tools) · [**Architecture**](./docs/ARCHITECTURE.md) · [**Roadmap**](./docs/ROADMAP.md)
 
 </div>
 
@@ -26,7 +26,7 @@ Cataloguing your records and prepping a set is slow, fiddly, and usually locked 
 
 ## Why this exists
 
-We checked. As of 2026, **no tool — open-source or paid — does all three of**: catalogue your own collection (vinyl *and* digital), enrich it with Camelot key + BPM, and draft a full harmonic set with an energy arc. The paid auto-sequencer leaves energy out on purpose; the energy-aware ones are all closed-source SaaS; and there is **no maintained, permissively-licensed harmonic-mixing engine on npm at all**. open-crate is that missing piece, built in the open.
+We checked. As of 2026, **no tool — open-source or paid — does all three of**: catalogue your own collection (vinyl *and* digital), enrich it with Camelot key + BPM, and draft a full harmonic set with an energy arc. The paid auto-sequencer leaves energy out on purpose; the energy-aware ones are all closed-source SaaS; and there is **no maintained, permissively-licensed TypeScript engine for this workflow that we could build on**. open-crate is that missing piece, built in the open.
 
 And the loudest things DJs actually complain about aren't fancy — they're **subscription fatigue**, **libraries that turn to chaos**, and **migration that eats your cue points**. So open-crate's first principle is simple: **your library is yours.** Plain files, full export, no account, works offline.
 
@@ -104,7 +104,7 @@ The default generator ([`greedy-harmonic`](./packages/core/src/generator/greedy.
 ```
 open-crate/
 ├─ packages/core/   @open-crate/core — zero-dep engine: schema, Camelot,
-│                   harmonic scoring, swappable generator, adapters (MIT, npm-ready)
+│                   harmonic scoring, swappable generator, adapters (MIT, package-ready)
 ├─ apps/web/        Next.js reference app (static-first). Reads data/crate.json.
 ├─ tools/           import.mjs + enrich.mjs — get your library in
 └─ docs/            ARCHITECTURE, SCHEMA, ROADMAP

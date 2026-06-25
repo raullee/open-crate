@@ -10,7 +10,10 @@ It does four things:
 4. **Pluggable adapters** for importing libraries and enriching key/BPM/metadata.
 
 ```bash
-npm install @open-crate/core
+git clone https://github.com/raullee/open-crate
+cd open-crate
+corepack pnpm install
+corepack pnpm build:core
 ```
 
 ```ts

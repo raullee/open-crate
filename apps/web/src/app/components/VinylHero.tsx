@@ -66,9 +66,12 @@ export function VinylHero({ accent = "#ff3d6e" }: { accent?: string }) {
   const [enabled, setEnabled] = useState(false);
 
   useEffect(() => {
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const wide = window.innerWidth >= 820;
-    setEnabled(!reduce && wide);
+    const frame = window.requestAnimationFrame(() => {
+      const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const wide = window.innerWidth >= 820;
+      setEnabled(!reduce && wide);
+    });
+    return () => window.cancelAnimationFrame(frame);
   }, []);
 
   if (!enabled) {

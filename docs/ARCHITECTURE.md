@@ -22,7 +22,7 @@ This is the single most important decision and the thing most worth copying.
 └───────────────────────────────────┼──────────────────────────┘
                                      │ imports
 ┌────────────────────────────────────▼─────────────────────────┐
-│  @open-crate/core  (zero-dep, framework-agnostic, MIT, npm)   │
+│  @open-crate/core  (zero-dep, framework-agnostic, MIT)        │
 │  schema · camelot · harmonic scoring · generator (swappable)  │
 │  · adapters (import/enrich interfaces) · crate ops            │
 └───────────────────────────────────▲──────────────────────────┘
@@ -49,7 +49,7 @@ A Next.js (App Router, static) app. It does **not** re-implement any logic — `
 
 - `/` — gamified landing (R3F vinyl hero, progress, leaderboard, latest-additions feed).
 - `/crate` — searchable/sortable list with the Camelot harmonic filter.
-- `/studio` — the set builder (light passphrase gate over public data; `NEXT_PUBLIC_STUDIO_PASS`).
+- `/studio` — the set builder (optional light passphrase gate over public data; `NEXT_PUBLIC_STUDIO_PASS`).
 
 ### 3. `tools/` — getting data in
 

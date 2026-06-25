@@ -10,11 +10,11 @@
   },
   "packageManager": "pnpm@9.12.0",
   "scripts": {
-    "build": "pnpm --filter @open-crate/core build && pnpm --filter web build",
-    "build:core": "pnpm --filter @open-crate/core build",
-    "dev": "pnpm --filter web dev",
-    "test": "pnpm --filter @open-crate/core test",
-    "lint": "pnpm --filter web lint"
+    "build": "corepack pnpm --filter @open-crate/core build && corepack pnpm --filter web build",
+    "build:core": "corepack pnpm --filter @open-crate/core build",
+    "dev": "corepack pnpm --filter web dev",
+    "test": "corepack pnpm --filter @open-crate/core test",
+    "lint": "corepack pnpm --filter web lint"
   },
   "engines": {
     "node": ">=20"

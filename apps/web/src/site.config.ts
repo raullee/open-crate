@@ -12,7 +12,7 @@ export const site = {
   description:
     "A free, open, local-first DJ crate: catalogue your records, enrich them with Camelot key + BPM, and draft harmonically-progressive sets. The engine is yours to extend.",
   /** Canonical URL of YOUR deployment (used for OG). Set after you deploy. */
-  url: "https://open-crate.vercel.app",
+  url: "https://crate.syncprimitive.com",
   /** The upstream project, linked in the footer ("built with open-crate"). */
   repo: "https://github.com/raullee/open-crate",
   /** Design accent (fluoro pink by default). */
@@ -21,5 +21,5 @@ export const site = {
    * Studio (set builder) gate. A light gate over public data, NOT security.
    * Override with NEXT_PUBLIC_STUDIO_PASS at build time. Empty string = no gate.
    */
-  studioPass: process.env.NEXT_PUBLIC_STUDIO_PASS ?? "crate",
+  studioPass: process.env.NEXT_PUBLIC_STUDIO_PASS ?? "",
 } as const;
