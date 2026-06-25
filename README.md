@@ -14,7 +14,7 @@ The engine is a swappable, MIT-licensed package. The set generator is a strategy
 [![Discussions](https://img.shields.io/github/discussions/raullee/open-crate?color=7A5CFF)](https://github.com/raullee/open-crate/discussions)
 [![Stars](https://img.shields.io/github/stars/raullee/open-crate?style=social)](https://github.com/raullee/open-crate/stargazers)
 
-[**Live demo**](https://crate.syncprimitive.com) · [**The engine**](./packages/core) · [**Import your library**](./tools) · [**Architecture**](./docs/ARCHITECTURE.md) · [**Roadmap**](./docs/ROADMAP.md)
+[**Live demo**](https://open-crate.vercel.app) · [**The engine**](./packages/core) · [**Import your library**](./tools) · [**Architecture**](./docs/ARCHITECTURE.md) · [**Roadmap**](./docs/ROADMAP.md)
 
 </div>
 
@@ -65,7 +65,7 @@ corepack pnpm dev          # http://localhost:3000  (ships with sample records)
 
 **Even less friction** ([all options →](./docs/INSTALL.md)):
 
-- **No terminal:** click Deploy above, or just look at the [live demo](https://crate.syncprimitive.com).
+- **No terminal:** click Deploy above, or just look at the [live demo](https://open-crate.vercel.app).
 - **One-liner:** `npx degit raullee/open-crate my-crate && cd my-crate && corepack enable && pnpm install && pnpm build:core && pnpm dev`
 - **Paste in your AI terminal:** hand [`LLM-INSTALL-PROMPT.txt`](./LLM-INSTALL-PROMPT.txt) to Claude Code / Cursor / Copilot / Gemini CLI and it stands open-crate up for you, default skin and all.
 
@@ -118,4 +118,4 @@ This wants to become the go-to open toolkit for harmonic mixing — that only ha
 
 ## Credits & licence
 
-MIT. Built from [crate.syncprimitive.com](https://crate.syncprimitive.com) by [@raullee](https://github.com/raullee) and contributors. Camelot/harmonic theory implemented clean; metadata via Discogs; optional BPM/key via GetSongBPM.
+MIT. Built from [open-crate.vercel.app](https://open-crate.vercel.app) by [@raullee](https://github.com/raullee) and contributors. Camelot/harmonic theory implemented clean; metadata via Discogs; optional BPM/key via GetSongBPM.

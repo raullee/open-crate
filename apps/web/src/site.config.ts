@@ -12,7 +12,7 @@ export const site = {
   description:
     "A free, open, local-first DJ crate: catalogue your records, enrich them with Camelot key + BPM, and draft harmonically-progressive sets. The engine is yours to extend.",
   /** Canonical URL of YOUR deployment (used for OG). Set after you deploy. */
-  url: "https://crate.syncprimitive.com",
+  url: "https://open-crate.vercel.app",
   /** The upstream project, linked in the footer ("built with open-crate"). */
   repo: "https://github.com/raullee/open-crate",
   /** Design accent (fluoro pink by default). */

@@ -3,7 +3,7 @@
 From zero-effort to full control. Most people want #1 or #2.
 
 ## 0. Just look at it (no install)
-Live demo: **https://crate.syncprimitive.com** — that's open-crate running.
+Live demo: **https://open-crate.vercel.app** — that's open-crate running.
 
 ## 1. One-click deploy (no terminal)
 Click the **Deploy** button in the [README](../README.md). Vercel forks the repo and deploys your own crate with the sample records and the default skin. Then edit `apps/web/data/crate.json` to make it yours.
