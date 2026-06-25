@@ -38,7 +38,7 @@ Legend: shipped ✅ · next ⏳ · planned ◻️. Demographics: **BD** bedroom 
 
 ## Ecosystem
 
-- ◻️ Publish `@open-crate/core` to npm with semantic-release + changesets.
+- ✅ Publish `@open-crate/core` to npm. Next: semantic-release + changesets.
 - ◻️ A plugin-template repo for custom generators and adapters.
 - ◻️ Adapter contributions: Serato, Traktor NML, Engine DJ, VirtualDJ, M3U8.
 - ◻️ A hosted docs site.

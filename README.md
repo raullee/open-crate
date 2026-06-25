@@ -9,7 +9,7 @@ The engine is a swappable, MIT-licensed package. The set generator is a strategy
 [![CI](https://github.com/raullee/open-crate/actions/workflows/ci.yml/badge.svg)](https://github.com/raullee/open-crate/actions/workflows/ci.yml)
 [![MIT License](https://img.shields.io/badge/license-MIT-black)](./LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6?logo=typescript&logoColor=white)](./packages/core)
-[![engine: @open-crate/core](https://img.shields.io/badge/engine-%40open--crate%2Fcore-ff48b0)](./packages/core)
+[![engine: @open-crate/core](https://img.shields.io/npm/v/@open-crate/core?label=%40open-crate%2Fcore&color=ff48b0)](https://www.npmjs.com/package/@open-crate/core)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](./CONTRIBUTING.md)
 [![Discussions](https://img.shields.io/github/discussions/raullee/open-crate?color=7A5CFF)](https://github.com/raullee/open-crate/discussions)
 [![Stars](https://img.shields.io/github/stars/raullee/open-crate?style=social)](https://github.com/raullee/open-crate/stargazers)
@@ -104,7 +104,7 @@ The default generator ([`greedy-harmonic`](./packages/core/src/generator/greedy.
 ```
 open-crate/
 ├─ packages/core/   @open-crate/core — zero-dep engine: schema, Camelot,
-│                   harmonic scoring, swappable generator, adapters (MIT, package-ready)
+│                   harmonic scoring, swappable generator, adapters (MIT, npm)
 ├─ apps/web/        Next.js reference app (static-first). Reads data/crate.json.
 ├─ tools/           import.mjs + enrich.mjs — get your library in
 └─ docs/            ARCHITECTURE, SCHEMA, ROADMAP

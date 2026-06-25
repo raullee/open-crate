@@ -10,10 +10,17 @@ follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - First-class energy axis + multi-bucket tags.
 - "Play next from what I own" co-pilot.
 - Additional import adapters: Serato, Traktor (.nml), Engine DJ.
-- Publish `@open-crate/core` to npm.
 - "Acid Booth" default skin + a themeable skin system.
 
 See [docs/ROADMAP.md](./docs/ROADMAP.md) for the full, pain-point-driven plan.
+
+## [0.1.1] - 2026-06-25
+### Added
+- Published `@open-crate/core` to npm as the first usable package release.
+
+### Notes
+- `0.1.0` was reserved by npm during the first publish attempt but did not
+  become installable. Use `0.1.1` or `latest`.
 
 ## [0.1.0] - 2026-06-24
 ### Added
@@ -29,5 +36,6 @@ See [docs/ROADMAP.md](./docs/ROADMAP.md) for the full, pain-point-driven plan.
 - Frictionless install: Deploy button, `npx degit` one-liner, and an
   LLM bootstrap prompt.
 
-[Unreleased]: https://github.com/raullee/open-crate/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/raullee/open-crate/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/raullee/open-crate/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/raullee/open-crate/releases/tag/v0.1.0

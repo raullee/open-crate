@@ -1,6 +1,6 @@
 {
   "name": "@open-crate/core",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Framework-agnostic engine for harmonic DJ set generation: Camelot/harmonic theory, a swappable set-generator, a portable crate schema, and pluggable import/enrichment adapters.",
   "keywords": [
     "dj",
